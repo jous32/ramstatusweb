@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Free:</strong>
+  <%= @memory.free %>
+</p>
+
+<p>
+  <strong>Used:</strong>
+  <%= @memory.used %>
+</p>
+
+<%= link_to 'Edit', edit_memory_path(@memory) %> |
+<%= link_to 'Back', memories_path %>
