@@ -1,6 +1,6 @@
 class MemoriesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_memory, only: [:show, :edit, :update, :destroy]
-  protect_from_forgery with: :null_session
 
   # GET /memories
   # GET /memories.json
